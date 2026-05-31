@@ -16,8 +16,14 @@ const config: Config = {
   markdown: {
     format: 'md',
   },
-      plugins: [require.resolve('docusaurus-lunr-search')],
-
+  plugins: [require.resolve('docusaurus-lunr-search')],
+  scripts: [
+    {
+      src: 'https://umami.leanderziehm.com/script.js',
+      defer: true,
+      'data-website-id': 'f6c43e3f-ed36-41a9-a120-c63cf96bf025',
+    },
+  ],
 
   // Set the production url of your site here
   url: 'https://your-docusaurus-site.example.com',
